@@ -21,10 +21,11 @@ function verifyAge(dateOfBirth) {
   let userAge = (today.setUTCHours(23, 59, 59, 59) - dateOfBirth) / msAYear;
 
   if (userAge < 16) {
-    console.log("not eligible");
+    window.location.assign("./pages/not-eligible.html");
     return false;
   } else if (userAge < 18) {
     console.log("might be eligible");
+    window.location.assign("./pages/not-eligible.html");
     return false;
   } else {
     window.location.assign("./pages/eligible.html");

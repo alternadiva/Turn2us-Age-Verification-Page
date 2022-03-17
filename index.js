@@ -27,7 +27,7 @@ function verifyAge(dateOfBirth) {
     console.log("might be eligible");
     return false;
   } else {
-    console.log("eligible");
+    window.location.assign("./pages/eligible.html");
     return true;
   }
 }

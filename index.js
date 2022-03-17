@@ -18,6 +18,5 @@ form.addEventListener("submit", (event) => {
 
 function verifyAge(dateOfBirth) {
   const msAYear = 1000 * 60 * 60 * 24 * 365.25;
-  let userAge = (today - dateOfBirth) / msAYear;
-  return userAge;
+  let userAge = (today.setUTCHours(23, 59, 59, 59) - dateOfBirth) / msAYear;
 }

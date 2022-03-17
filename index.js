@@ -19,4 +19,15 @@ form.addEventListener("submit", (event) => {
 function verifyAge(dateOfBirth) {
   const msAYear = 1000 * 60 * 60 * 24 * 365.25;
   let userAge = (today.setUTCHours(23, 59, 59, 59) - dateOfBirth) / msAYear;
+
+  if (userAge < 16) {
+    console.log("not eligible");
+    return false;
+  } else if (userAge < 18) {
+    console.log("might be eligible");
+    return false;
+  } else {
+    console.log("eligible");
+    return true;
+  }
 }

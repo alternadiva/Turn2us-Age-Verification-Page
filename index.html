@@ -8,7 +8,7 @@
     <title>Turn2us | Age Verification</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://api.fontshare.com/css?f[]=general-sans@400,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -32,10 +32,14 @@
         <h1 id="title">Find out if you are eligible for Universal Credit</h1>
         <section id="form-section">
             <form id="form">
-                <label for="dob" id="dob-label">What is your date of birth?</label>
-                <input type="date" name="dob" id="dob" min="1900-01-01" required>
-                <div>
-                    <h2>Why do we need to know this?</h2>
+                <article id="label-input">
+                    <label for="dob" id="dob-label">What is your date of birth?</label>
+                    <input type="date" name="dob" id="dob" min="1900-01-01" required>
+                </article>
+                <h3 id="info-btn" class="info-btn">
+                    <span id="arrow">➔</span>Why do we need to know this?
+                </h3>
+                <div class="hide-info">
                     <p>
                         Your date of birth affects what benefits and tax credits you may be entitled to. It will also
                         tell
@@ -43,18 +47,19 @@
                         what
                         your pension age is.
                     </p>
-                    <h3>Just a reminder</h3>
+                    <h4>Just a reminder</h4>
                     <ul>
                         <li>
                             You must be at least 16 years old to have your own benefit claim.
                         </li>
                         <li>
-                            If you are 16 or 17 years old special rules apply so you should find an adviser to speak to
-                            (opens in a new window) about your benefit entitlement.
+                            If you are 16 or 17 years old special rules apply so you should <a href=""> find an adviser
+                                to speak to
+                                (opens in a new window)</a> about your benefit entitlement.
                         </li>
                     </ul>
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit">Submit</button>
             </form>
         </section>
     </main>

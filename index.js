@@ -32,3 +32,13 @@ function verifyAge(dateOfBirth) {
     return true;
   }
 }
+
+const infoBtn = document.getElementById("info-btn");
+infoBtn.addEventListener("click", toggleInfo);
+
+function toggleInfo() {
+  const info = this.nextElementSibling;
+  info.classList.toggle("active-info");
+  infoBtn.classList.toggle("active-btn");
+  document.getElementById("arrow").classList.toggle("active-arrow");
+}

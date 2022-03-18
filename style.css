@@ -2,3 +2,55 @@ html {
   font-family: "Roboto Slab", serif;
   font-family: "General Sans", sans-serif;
 }
+
+header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 15px 5px 15px;
+}
+
+#nav-menu {
+  height: 65px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+#nav-menu > li {
+  font-size: 1rem;
+  list-style: none;
+  font-weight: 600;
+}
+
+#nav-menu > li:last-child {
+  background-color: #e74300;
+  padding: 11px 30px;
+}
+
+#nav-menu > li:hover {
+  text-decoration: underline;
+}
+#logo {
+  width: 100px;
+  height: 65px;
+}
+
+main {
+  width: 99.3vw;
+  height: 77vh;
+  background-color: #f2f2f2;
+}
+
+#form-section {
+  width: 70vw;
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+}

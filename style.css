@@ -16,8 +16,8 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
-  padding: 0 15px 5px 15px;
+  height: auto;
+  padding: 0 15px 0px 15px;
 }
 
 #nav-menu {

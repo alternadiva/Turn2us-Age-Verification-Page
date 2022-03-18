@@ -1,6 +1,12 @@
 ## Turn2us Age Verification Page 1️⃣8️⃣
 
-### User Stories:
+
+### Description
+
+This is my solution for the age verification technical test of Turn2us.
+
+---
+### User Stories
 - [x] As a support seeker user, I’d like to fill out a form to verify if I’m entitled to claim Universal Credit considering my age, so I can start my application
 - [x] As a user who needs reassurance, I’d like to get visual feedback if I’m entitled so I can make sure before I submit my application
 - [x] As a user who needs reassurance, I’d like to get visual feedback if I’m not entitled so I can start looking for other options
